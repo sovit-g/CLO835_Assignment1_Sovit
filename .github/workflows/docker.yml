@@ -1,7 +1,9 @@
 name: Build and Push to ECR  
-on:  
-  push:  
-    branches: [ master ]  
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]  
 jobs:  
   build-push:  
     runs-on: ubuntu-latest  
